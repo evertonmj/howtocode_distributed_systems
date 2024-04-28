@@ -34,7 +34,7 @@ public class DNSServerHealthCheckController {
     public String returnActiveAppIPs() throws URISyntaxException {
 
         try {
-            // Monta a requisição para obter a lista de aplicativos no Eureka
+            // Monta a requisição para obter a lista de aplicativos no Eureka.
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI("http://localhost:8761/eureka/apps"))
                     .GET()

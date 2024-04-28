@@ -29,7 +29,7 @@ public class ServiceDiscoveryHealthCheckController {
 
     @GetMapping("/health")
     public String healthy() {
-        return "Estpu vivo e bem! Sou a app "+appName+" - " + LocalDateTime.now();
+        return "Estou vivo e bem! Sou a app "+appName+" - " + LocalDateTime.now();
     }
 
     @GetMapping("/discover")

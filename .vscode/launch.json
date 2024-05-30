@@ -30,6 +30,58 @@
             "projectName": "demo-eureka-client-b",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DNSServerApplication<dns-server-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.nameresolutiondnsserver.DNSServerApplication",
+            "projectName": "dns-server-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaServerApplication<eureka-server-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.nameresolutioneurekaserver.EurekaServerApplication",
+            "projectName": "eureka-server-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52059 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eureka-server-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ISPServerApplication<isp-server-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.nameresolutionispserver.ISPServerApplication",
+            "projectName": "isp-server-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=52131 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=isp-server-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PerfilApplication<perfil-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.nameresolutionperfil.PerfilApplication",
+            "projectName": "perfil-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ValidacaoApplication<validacao-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.nameresolutionvalidacao.ValidacaoApplication",
+            "projectName": "validacao-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

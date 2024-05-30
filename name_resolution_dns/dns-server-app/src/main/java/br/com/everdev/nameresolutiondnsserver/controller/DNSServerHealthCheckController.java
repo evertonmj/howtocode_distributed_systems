@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolution.dnsserver.controller;
+package br.com.everdev.nameresolutiondnsserver.controller;
 
 
 import org.springframework.beans.factory.annotation.Value;

@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoEurekaAppApplication<demo-eureka-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.demoeurekaapp.DemoEurekaAppApplication",
+            "projectName": "demo-eureka-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoEurekaClientAApplication<demo-eureka-client-a>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.websocketclienta.DemoEurekaClientAApplication",
+            "projectName": "demo-eureka-client-a",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51986 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=demo-eureka-client-a"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoEurekaClientBApplication<demo-eureka-client-b>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.everdev.demoeurekaclientb.DemoEurekaClientBApplication",
+            "projectName": "demo-eureka-client-b",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

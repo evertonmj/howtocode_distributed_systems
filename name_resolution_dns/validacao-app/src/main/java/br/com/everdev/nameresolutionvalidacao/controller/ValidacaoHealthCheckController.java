@@ -29,7 +29,7 @@ public class ValidacaoHealthCheckController {
     //endereço para testar se a aplicação está funcional
     @GetMapping("/health")
     public String healthy() {
-        return "Estpu vivo e bem! Sou a app "+appName+" - " + LocalDateTime.now();
+        return "Estou vivo e bem! Sou a app "+appName+" - " + LocalDateTime.now();
     }
 
 }

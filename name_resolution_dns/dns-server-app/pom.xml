@@ -24,6 +24,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-webflux</artifactId>
+    	</dependency>
+
 		<!-- Eureka Server Starter -->
 		<!-- General -->
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

@@ -9,7 +9,6 @@ import reactor.core.publisher.Mono;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/isp")
 public class ISPController {
 
     @Autowired
@@ -20,11 +19,10 @@ public class ISPController {
 
     @PostMapping("/validacao")
     public Mono<String> validarEmail(@RequestBody Map<String, String> payload) {
-        String email = payload.get("email");
-        String validacaoAppUrl = discoveryClient.getInstances("VALIDACAO-APP").stream()
+        String validacaoAppUrl = discoveryClient.getInstances("validacao-app").stream()
                 .findFirst()
                 .map(instance -> instance.getUri().toString())
-                .orElseThrow(() -> new RuntimeException("App não encontrado."));
+                .orElseThrow(() -> new RuntimeException("App nao encontrado."));
 
         return webClientBuilder.build()
                 .post()

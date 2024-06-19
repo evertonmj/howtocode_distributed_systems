@@ -2,8 +2,20 @@ package br.com.everdev.nameresolution.ispserver.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.*;
 
+=======
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.io.ByteArrayInputStream;
+>>>>>>> ricardo-branch
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -116,6 +128,7 @@ public class ISPServerHealthCheckController {
             return "Erro ao processar a solicitação: " + e.getMessage();
         }
     }
+<<<<<<< HEAD
 /********************************************************************************************/
 @PostMapping("/profile")
 public String sendProfile(@RequestBody Map<String, String> requestBody) {
@@ -159,5 +172,82 @@ public String sendProfile(@RequestBody Map<String, String> requestBody) {
         return "Erro ao processar a solicitação: " + e.getMessage();
     }
 }
+=======
+    /********************************************************************************************/
+    @PostMapping("/profile")
+    public String sendProfile(@RequestBody Map<String, String> requestBody) {
+        try {
+            // Construir a URL com a rota para obter o IP do servidor DNS
+            String dnsUrl = "http://localhost:8081/return";
+
+            // Criar a solicitação HTTP GET para obter o IP
+            HttpRequest dnsRequest = HttpRequest.newBuilder()
+                    .uri(new URI(dnsUrl))
+                    .GET()
+                    .build();
+
+            // Enviar a solicitação ao servidor DNS e obter a resposta
+            HttpResponse<String> dnsResponse = HttpClient.newHttpClient().send(dnsRequest, HttpResponse.BodyHandlers.ofString());
+
+            // Extrair o IP do corpo da resposta do servidor DNS
+            String ip = dnsResponse.body();
+
+            // Construir a URL com o IP e a porta do destino
+            String url = "http://"+ ip +"/emails/perfil";
+
+            // Criar o corpo da requisição em formato JSON
+            ObjectMapper objectMapper = new ObjectMapper();
+            String jsonBody = objectMapper.writeValueAsString(requestBody);
+
+            // Criar a solicitação HTTP POST
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(new URI(url))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(jsonBody))
+                    .build();
+
+            // Enviar a solicitação e obter a resposta
+            HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+
+            // Retornar a resposta do servidor
+            return response.body();
+        } catch (Exception e) {
+            // Em caso de exceção, retornar uma mensagem de erro
+            return "Erro ao processar a solicitação: " + e.getMessage();
+        }
+    }
+
+    @GetMapping("/profile/obterArquivo/{filename}")
+    public ResponseEntity<InputStreamResource> obterArquivo(@PathVariable String filename) {
+        try {
+            // Construir a URL com o IP e a porta do destino
+            String url = "http://localhost:8181/obterArquivo/" + filename;
+
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(new URI(url))
+                    .GET()
+                    .build();
+
+            HttpResponse<String> response = HttpClient.newBuilder().build().send(request, HttpResponse.BodyHandlers.ofString());
+
+            // Criar um InputStream a partir da resposta
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(response.body().getBytes(StandardCharsets.UTF_8));
+
+            // Retornar o arquivo como um recurso de InputStream
+            InputStreamResource resource = new InputStreamResource(byteArrayInputStream);
+
+            return ResponseEntity.ok()
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + filename + "\"")
+                    .contentType(MediaType.TEXT_PLAIN)
+                    .body(resource);
+        } catch (URISyntaxException | IOException | InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+
+>>>>>>> ricardo-branch
 }
 

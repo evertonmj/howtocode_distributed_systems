@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -5,4 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/howtocode_distributed_systems.iml" filepath="$PROJECT_DIR$/.idea/howtocode_distributed_systems.iml" />
     </modules>
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SistemaDistribuidosApp2.iml" filepath="$PROJECT_DIR$/.idea/SistemaDistribuidosApp2.iml" />
+    </modules>
+  </component>
+>>>>>>> ricardo-branch
 </project>

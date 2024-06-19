@@ -9,8 +9,22 @@
         <option value="$PROJECT_DIR$/dns-server-app/pom.xml" />
         <option value="$PROJECT_DIR$/isp-server-app/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server-app/pom.xml" />
+<<<<<<< HEAD
       </list>
     </option>
+=======
+        <option value="$PROJECT_DIR$/dfs-app-a/pom.xml" />
+        <option value="$PROJECT_DIR$/dfs-c/pom.xml" />
+        <option value="$PROJECT_DIR$/dfs-b/pom.xml" />
+        <option value="$PROJECT_DIR$/dfs-a/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/dfs-app-a/pom.xml" />
+      </set>
+    </option>
+>>>>>>> ricardo-branch
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

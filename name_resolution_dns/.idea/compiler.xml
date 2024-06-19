@@ -2,11 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+<<<<<<< HEAD
+=======
+      <profile default="true" name="Default" enabled="true" />
+>>>>>>> ricardo-branch
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dns-server-app" />
+<<<<<<< HEAD
         <module name="validacao-app" />
         <module name="isp-server-app" />
         <module name="perfil-app" />
@@ -16,6 +21,27 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+=======
+        <module name="dfs-a" />
+        <module name="isp-server-app" />
+        <module name="dfs-c" />
+        <module name="perfil-app" />
+        <module name="dfs-b" />
+        <module name="validacao-app" />
+        <module name="eureka-server-app" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dfs-app-a" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dfs-a" options="-parameters" />
+      <module name="dfs-app-a" options="-parameters" />
+      <module name="dfs-b" options="-parameters" />
+      <module name="dfs-c" options="-parameters" />
+>>>>>>> ricardo-branch
       <module name="dns-server-app" options="-parameters" />
       <module name="eureka-server-app" options="-parameters" />
       <module name="isp-server-app" options="-parameters" />

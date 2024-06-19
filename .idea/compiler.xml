@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
@@ -31,4 +32,31 @@
       <module name="websocket-server" options="-parameters" />
     </option>
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dns-server-app" />
+        <module name="validacao-app" />
+        <module name="isp-server-app" />
+        <module name="perfil-app" />
+        <module name="eureka-server-app" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dns-server-app" options="-parameters" />
+      <module name="eureka-server-app" options="-parameters" />
+      <module name="isp-server-app" options="-parameters" />
+      <module name="perfil-app" options="-parameters" />
+      <module name="validacao-app" options="-parameters" />
+    </option>
+  </component>
+>>>>>>> ricardo-branch
 </project>

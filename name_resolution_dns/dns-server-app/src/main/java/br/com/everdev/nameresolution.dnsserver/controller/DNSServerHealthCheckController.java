@@ -17,6 +17,10 @@ import java.util.List;
 @RestController
 public class DNSServerHealthCheckController {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ricardo-branch
     @Value("${spring.application.name}")
     private String appName;
 
@@ -30,11 +34,19 @@ public class DNSServerHealthCheckController {
         return "Sou o DNS Server e estou online: " + LocalDateTime.now();
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ricardo-branch
     @GetMapping("/return")
     public String returnActiveAppIPs() throws URISyntaxException {
 
         try {
+<<<<<<< HEAD
             // Monta a requisição para obter a lista de aplicativos no Eureka.
+=======
+            // Monta a requisição para obter a lista de aplicativos no Eureka
+>>>>>>> ricardo-branch
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI("http://localhost:8761/eureka/apps"))
                     .GET()

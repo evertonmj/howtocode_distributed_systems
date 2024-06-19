@@ -1,0 +1,18 @@
+# application.yml
+
+server:
+  port: 8081 # or your preferred port
+
+spring:
+  application:
+    name: dns-server-app
+  service-discovery-app: http://localhost:8761/eureka/apps
+
+eureka:
+  decoderName: JacksonJson
+  client:
+    healthcheck:
+      enabled: true
+    register-with-eureka: false
+    fetch-registry: false
+

@@ -1,0 +1,15 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: dfs-c
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+  instance:
+    preferIpAddress: true # Optional, for preferring IP address in registration

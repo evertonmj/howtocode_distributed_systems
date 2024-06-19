@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolutionispserver.controller;
+package br.com.everdev.dfsappb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 import java.util.Map;
 
 @RestController
-public class ISPController {
+public class DFSAppBController {
 
     @Autowired
     private DiscoveryClient discoveryClient;

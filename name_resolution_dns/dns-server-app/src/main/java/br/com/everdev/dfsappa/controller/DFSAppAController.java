@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolutiondnsserver.controller;
+package br.com.everdev.dfsappa.controller;
 
 import java.util.List;
 
@@ -10,10 +10,10 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/dns")
-public class DNSController {
+public class DFSAppAController {
     private WebClient webClient = null;
 
-    public DNSController(WebClient.Builder webClientBuilder) {
+    public DFSAppAController(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.baseUrl("http://localhost:8761").build();
     }
 

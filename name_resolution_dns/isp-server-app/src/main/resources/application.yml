@@ -2,7 +2,7 @@
 
 spring:
   application:
-    name: isp-server
+    name: dfs-app-b
 
 eureka:
   client:

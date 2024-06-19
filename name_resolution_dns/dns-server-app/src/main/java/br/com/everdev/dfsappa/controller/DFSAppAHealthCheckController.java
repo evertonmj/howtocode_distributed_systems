@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolutiondnsserver.controller;
+package br.com.everdev.dfsappa.controller;
 
 
 import org.springframework.beans.factory.annotation.Value;
@@ -13,7 +13,7 @@ import java.net.http.HttpResponse;
 import java.time.LocalDateTime;
 
 @RestController
-public class DNSServerHealthCheckController {
+public class DFSAppAHealthCheckController {
 
     @Value("${spring.service-discovery-app}")
     private String applicationDiscoveryURI;

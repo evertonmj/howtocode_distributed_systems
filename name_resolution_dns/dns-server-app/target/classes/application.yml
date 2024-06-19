@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: dns-server-app
+    name: dfs-app-a
   service-discovery-app: http://localhost:8761/eureka/apps
 
 eureka:

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.everdev</groupId>
-	<artifactId>dns-server-app</artifactId>
+	<artifactId>dfs-app-a</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dns-server-app</name>
+	<name>dfs-app-a</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>

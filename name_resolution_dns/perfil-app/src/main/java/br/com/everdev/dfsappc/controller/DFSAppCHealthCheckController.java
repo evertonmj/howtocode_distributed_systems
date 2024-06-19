@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolutionperfil.controller;
+package br.com.everdev.dfsappc.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 import java.time.LocalDateTime;
 
 @RestController
-public class PerfilHealthCheckController {
+public class DFSAppCHealthCheckController {
     @Value("${spring.application.name}")
     private String appName;
 

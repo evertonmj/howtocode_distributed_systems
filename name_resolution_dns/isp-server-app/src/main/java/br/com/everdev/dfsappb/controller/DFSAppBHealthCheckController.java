@@ -1,4 +1,4 @@
-package br.com.everdev.nameresolutionispserver.controller;
+package br.com.everdev.dfsappb.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 
 @RestController
-public class ISPServerHealthCheckController {
+public class DFSAppBHealthCheckController {
 
     @Value("${spring.application.name}")
     private String appName;

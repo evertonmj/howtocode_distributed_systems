@@ -4,32 +4,32 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="demo-eureka-client-a" />
-        <module name="websocket-client-a" />
-        <module name="websocket-server" />
-        <module name="websocket-client-b" />
-        <module name="demo-eureka-client-b" />
-        <module name="rmi-client-b" />
-        <module name="rmi-client-a" />
-        <module name="demo-eureka-app" />
-        <module name="rmi-server" />
+        <sourceOutputDir name="target/generated-sources/annotations"/>
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations"/>
+        <outputRelativeToContentRoot value="true"/>
+        <module name="demo-eureka-client-a"/>
+        <module name="websocket-client-a"/>
+        <module name="websocket-server"/>
+        <module name="websocket-client-b"/>
+        <module name="demo-eureka-client-b"/>
+        <module name="rmi-client-b"/>
+        <module name="rmi-client-a"/>
+        <module name="demo-eureka-app"/>
+        <module name="rmi-server"/>
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo-eureka-app" options="-parameters" />
-      <module name="demo-eureka-client-a" options="-parameters" />
-      <module name="demo-eureka-client-b" options="-parameters" />
-      <module name="rmi-client-a" options="-parameters" />
-      <module name="rmi-client-b" options="-parameters" />
-      <module name="rmi-server" options="-parameters" />
-      <module name="websocket-client-a" options="-parameters" />
-      <module name="websocket-client-b" options="-parameters" />
-      <module name="websocket-server" options="-parameters" />
+      <module name="demo-eureka-app" options="-parameters"/>
+      <module name="demo-eureka-client-a" options="-parameters"/>
+      <module name="demo-eureka-client-b" options="-parameters"/>
+      <module name="rmi-client-a" options="-parameters"/>
+      <module name="rmi-client-b" options="-parameters"/>
+      <module name="rmi-server" options="-parameters"/>
+      <module name="websocket-client-a" options="-parameters"/>
+      <module name="websocket-client-b" options="-parameters"/>
+      <module name="websocket-server" options="-parameters"/>
     </option>
   </component>
 =======
@@ -38,24 +38,24 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="dns-server-app" />
-        <module name="validacao-app" />
-        <module name="isp-server-app" />
-        <module name="perfil-app" />
-        <module name="eureka-server-app" />
+        <sourceOutputDir name="target/generated-sources/annotations"/>
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations"/>
+        <outputRelativeToContentRoot value="true"/>
+        <module name="dns-server-app"/>
+        <module name="validacao-app"/>
+        <module name="isp-server-app"/>
+        <module name="perfil-app"/>
+        <module name="eureka-server-app"/>
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="dns-server-app" options="-parameters" />
-      <module name="eureka-server-app" options="-parameters" />
-      <module name="isp-server-app" options="-parameters" />
-      <module name="perfil-app" options="-parameters" />
-      <module name="validacao-app" options="-parameters" />
+      <module name="dns-server-app" options="-parameters"/>
+      <module name="eureka-server-app" options="-parameters"/>
+      <module name="isp-server-app" options="-parameters"/>
+      <module name="perfil-app" options="-parameters"/>
+      <module name="validacao-app" options="-parameters"/>
     </option>
   </component>
 >>>>>>> ricardo-branch
